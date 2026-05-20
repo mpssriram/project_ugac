@@ -1,0 +1,93 @@
+{
+  "title": "UG Academic Council (UGAC) - IIT Mandi",
+  "subtitle": "Information, processes, and resources for undergraduates",
+  "sections": [
+    {
+      "id": "overview",
+      "title": "Overview",
+      "body": "The Undergraduate Academic Council (UGAC) supports academic policy, student support processes, and communication related to undergraduate academics. This website centralizes key processes, curated resources, and clear step-by-step guides so students can move faster with fewer emails and fewer surprises."
+    },
+    {
+      "id": "principles",
+      "title": "Guiding Principles",
+      "body": "Clarity first. Official where needed. Student-friendly always. We aim to keep information consistent, accessible, and up-to-date, with clear owners for each page so updates don’t get lost."
+    },
+    {
+      "id": "structure",
+      "title": "Proposed Website Structure",
+      "body": "Suggested sections: Overview, Guiding Principles, Legacy & History, B.Tech Curriculum, Team, Academic Opportunities, Procedural Flowcharts, Announcements, and Contacts."
+    },
+    {
+      "id": "legacy",
+      "title": "Legacy and History: Previous Academic Secretaries",
+      "body": "A quick look at initiatives over the years. (Demo data below — replace with official records.)",
+      "people": [
+        { "name": "Academic Secretary (2023–24)", "role": "Process documentation & student support", "email": "ugac@iitmandi.ac.in" },
+        { "name": "Academic Secretary (2022–23)", "role": "Curriculum visibility & resource consolidation", "email": "ugac@iitmandi.ac.in" },
+        { "name": "Academic Secretary (2021–22)", "role": "Policy notes & communication improvements", "email": "ugac@iitmandi.ac.in" },
+        { "name": "Academic Secretary (2020–21)", "role": "Foundational workflow drafts (add/drop, withdrawal)", "email": "ugac@iitmandi.ac.in" }
+      ]
+    },
+    {
+      "id": "curriculum",
+      "title": "B.Tech. Curriculum and Course Structures",
+      "body": "Find curated curriculum links, semester-wise structure summaries, and quick explanations of common terms (credits, prerequisites, electives). (Demo links below — update to official URLs.)",
+      "links": [
+        { "label": "Curriculum (PDF)", "url": "https://example.com/ug-curriculum.pdf" },
+        { "label": "Course Structures", "url": "https://example.com/course-structures" },
+        { "label": "Academic Calendar", "url": "https://example.com/academic-calendar" },
+        { "label": "FAQs (Credits & Grades)", "url": "https://example.com/faq-credits-grades" }
+      ]
+    },
+    {
+      "id": "team",
+      "title": "Team",
+      "body": "Meet the team responsible for academic process clarity, resources, and student-facing communication. (Demo data below — replace with current office bearers.)",
+      "people": [
+        { "name": "Academic Secretary", "role": "Lead — policy, coordination, approvals", "email": "ugac@iitmandi.ac.in" },
+        { "name": "Deputy Academic Secretary", "role": "Ops — tracking, student support", "email": "ugac@iitmandi.ac.in" },
+        { "name": "Web/Tech Lead", "role": "Maintainer — website, deployments, fixes", "email": "ugac@iitmandi.ac.in" },
+        { "name": "Content Coordinator", "role": "Docs — pages, updates, verification", "email": "ugac@iitmandi.ac.in" }
+      ]
+    },
+    {
+      "id": "opportunities",
+      "title": "Academic Opportunities",
+      "body": "Explore common academic pathways: minors/honors, research projects, exchange programs, special topic courses, and internships aligned with academics. (Demo list below — link to official pages where possible.)",
+      "links": [
+        { "label": "Minors / Honors Overview", "url": "https://example.com/minors-honors" },
+        { "label": "Research Opportunities", "url": "https://example.com/research-opportunities" },
+        { "label": "Exchange Programs", "url": "https://example.com/exchange" },
+        { "label": "Special Topics / Independent Study", "url": "https://example.com/special-topics" }
+      ]
+    },
+    {
+      "id": "flowcharts",
+      "title": "Procedural Flowcharts",
+      "body": "Flowcharts outlining key academic procedures.",
+      "flowcharts": [
+        { "title": "Add/Drop Workflow", "description": "When and how to submit add/drop; what approvals are needed; expected timelines.", "link": "https://example.com/flowchart-add-drop" },
+        { "title": "Course Withdrawal Workflow", "description": "Eligibility checks, approvals, and final confirmation steps.", "link": "https://example.com/flowchart-withdrawal" },
+        { "title": "Minor Registration Workflow", "description": "Choosing courses, eligibility, and submission checklist.", "link": "https://example.com/flowchart-minor" },
+        { "title": "Grade Grievance Workflow", "description": "Steps to raise an issue, escalation levels, and timelines.", "link": "https://example.com/flowchart-grade-grievance" }
+      ]
+    }
+  ],
+  "contacts": [
+    {
+      "name": "UGAC",
+      "email": "ugac@iitmandi.ac.in",
+      "role": "Council mailbox"
+    },
+    {
+      "name": "Web/Tech Support",
+      "email": "ugac@iitmandi.ac.in",
+      "role": "Website support and updates"
+    },
+    {
+      "name": "Academic Queries",
+      "email": "ugac@iitmandi.ac.in",
+      "role": "Process clarifications and routing"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+[
+  {
+    "id": 1,
+    "name": "Add/Drop Window (Demo)",
+    "description": "The add/drop window is open for a limited time. Check the academic calendar for exact dates and follow the add/drop flowchart."
+  },
+  {
+    "id": 2,
+    "name": "Minor Registration (Demo)",
+    "description": "Minor registration guidelines have been consolidated on the website. Verify eligibility and submit required approvals before the deadline."
+  },
+  {
+    "id": 3,
+    "name": "Withdrawal Requests (Demo)",
+    "description": "Course withdrawal requests require advisor approval. See the withdrawal workflow for steps and timelines."
+  },
+  {
+    "id": 4,
+    "name": "UGAC Website Updates (Demo)",
+    "description": "We are adding curated links, team info, and procedural flowcharts. If you spot outdated info, report it to UGAC."
+  },
+  {
+    "id": 5,
+    "name": "Academic Opportunities (Demo)",
+    "description": "Explore research, exchange programs, and special topic courses in the Academic Opportunities section."
+  }
+]
