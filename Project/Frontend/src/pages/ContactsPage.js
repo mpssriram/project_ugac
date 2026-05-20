@@ -4,8 +4,8 @@ import { Card } from '../components/SectionCards';
 export default function ContactsPage({ content }) {
     const contacts = content?.contacts || [];
     return (
-        <div className="mx-auto w-[min(1080px,calc(100%-40px))] py-6">
-            <div className="rounded-3xl border border-white/10 bg-white/5 p-5">
+        <div className="ui-page">
+            <div className="ui-surface">
                 <h1 className="text-2xl font-extrabold tracking-tight">Contacts</h1>
                 <div className="mt-1 text-sm text-white/70">Email the relevant point of contact.</div>
 

@@ -38,17 +38,17 @@ const App = () => {
     return (
         <div className="app">
             <Particles
-                particleCount={260}
+                particleCount={160}
                 particleSpread={18}
                 speed={0.2}
                 particleColors={['#9aa7ff', '#7cf0ff', '#ffffff']}
                 moveParticlesOnHover={true}
                 particleHoverFactor={2}
                 alphaParticles={true}
-                particleBaseSize={42}
+                particleBaseSize={30}
                 sizeRandomness={0.65}
                 cameraDistance={30}
-                disableRotation={false}
+                disableRotation={true}
                 pixelRatio={window.devicePixelRatio}
                 className="fixed inset-0 z-0 pointer-events-none"
             />
@@ -60,7 +60,7 @@ const App = () => {
             />
 
             {error ? (
-                <div className="mx-auto w-[min(1080px,calc(100%-40px))] py-6 relative z-10">
+                <div className="ui-page relative z-10">
                     <div className="rounded-2xl border border-red-400/40 bg-red-500/10 p-4 text-red-100">{error}</div>
                 </div>
             ) : (
