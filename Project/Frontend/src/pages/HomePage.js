@@ -1,11 +1,27 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
+const FEATURED_TOPIC_IDS = ['overview', 'flowcharts', 'curriculum', 'opportunities', 'principles', 'team'];
+
+function sanitizeSnippet(text) {
+    if (!text) return '';
+    return String(text)
+        .replace(/\([^)]*demo[^)]*\)/gi, '')
+        .replace(/demo data below[^.]*\./gi, '')
+        .replace(/demo links below[^.]*\./gi, '')
+        .replace(/replace with official[^.]*\./gi, '')
+        .replace(/\s{2,}/g, ' ')
+        .trim();
+}
+
 export default function HomePage({ content }) {
     const sections = content?.sections || [];
-    const featured = sections
-        .filter(s => s.id !== 'gap' && (s.title || '').trim())
-        .slice(0, 6);
+
+    const byId = new Map(sections.map(s => [s.id, s]));
+    const curated = FEATURED_TOPIC_IDS.map(id => byId.get(id)).filter(Boolean);
+    const filler = sections.filter(s => s.id !== 'gap' && (s.title || '').trim() && !FEATURED_TOPIC_IDS.includes(s.id));
+    const featured = [...curated, ...filler].slice(0, 6);
+
     return (
         <div className="ui-page">
             <div className="ui-surface p-5">
@@ -57,7 +73,9 @@ export default function HomePage({ content }) {
                         {featured.map(s => (
                             <Link key={s.id} to={`/topic/${s.id}`} className="ui-topicCard ui-cardTight group">
                                 <div className="font-semibold text-white/95">{s.title}</div>
-                                <div className="mt-2 line-clamp-2 text-sm leading-6 text-white/70">{s.body || 'Open to view details.'}</div>
+                                <div className="mt-2 line-clamp-2 text-sm leading-6 text-white/70">
+                                    {sanitizeSnippet(s.body) || 'Open to view details.'}
+                                </div>
                                 <div className="ui-topicMeta mt-2">
                                     <span className="truncate">/topic/{s.id}</span>
                                     <span className="text-cyan-200/90 group-hover:text-cyan-200">Open →</span>
@@ -66,10 +84,6 @@ export default function HomePage({ content }) {
                         ))}
                     </div>
                 </div>
-            </div>
-
-            <div className="mt-6 border-t border-white/10 pt-4 text-xs text-white/60">
-                © {new Date().getFullYear()} UG Academic Council
             </div>
         </div>
     );
