@@ -41,7 +41,10 @@ const App = () => {
                 setContent(c);
                 setAnnouncements(Array.isArray(items) ? items : []);
             })
-            .catch(() => setError('Backend not reachable. Start the PythonBackend on port 5000.'));
+            .catch((requestError) => {
+                const fallbackMessage = 'Backend not reachable. Set REACT_APP_API_BASE_URL for production or run the Python backend locally on port 5000.';
+                setError(requestError?.message || fallbackMessage);
+            });
     }, []);
 
     const onAddAnnouncement = async (payload) => {
