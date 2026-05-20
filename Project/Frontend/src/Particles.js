@@ -192,6 +192,8 @@ const Particles = ({
             lastTime = t;
             elapsed += delta * speed;
 
+            // Clear each frame to avoid any uninitialized / stale framebuffer artifacts.
+            gl.clear(gl.COLOR_BUFFER_BIT);
             program.uniforms.uTime.value = elapsed * 0.001;
 
             if (moveParticlesOnHover) {

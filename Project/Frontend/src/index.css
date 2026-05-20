@@ -61,6 +61,10 @@ body {
     @apply inline-flex items-center justify-center rounded-xl border border-white/10 bg-white/5 px-3 py-2 text-sm text-white/90 transition-colors hover:border-white/20 hover:bg-white/10;
   }
 
+  .ui-btnDense {
+    @apply px-3 py-1.5 text-sm;
+  }
+
   .ui-btnPrimary {
     @apply border-cyan-200/30 bg-cyan-200/10 hover:border-cyan-200/40;
   }
@@ -79,5 +83,9 @@ body {
 
   .ui-topicMeta {
     @apply mt-3 flex items-center justify-between gap-3 text-xs text-white/50;
+  }
+
+  .ui-cardTight {
+    @apply p-3;
   }
 }
